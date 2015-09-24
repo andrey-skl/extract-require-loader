@@ -1,0 +1,27 @@
+{
+  "name": "html-require-postloader",
+  "version": "0.0.10",
+  "description": "Webpack loader which parses html loaded with html-loader and replaces content with required value by pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huston007/html-require-postloader.git"
+  },
+  "keywords": [
+    "webpack",
+    "html"
+  ],
+  "author": "Andrey Skladchikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huston007/html-require-postloader/issues"
+  },
+  "homepage": "https://github.com/huston007/html-require-postloader",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
