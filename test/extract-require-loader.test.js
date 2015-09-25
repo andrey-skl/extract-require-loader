@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var loader = require('../lib/html-require-postloader');
+var loader = require('../lib/extract-require-loader');
 
 describe('html-require-postloader', function () {
     var defaultQuery = {

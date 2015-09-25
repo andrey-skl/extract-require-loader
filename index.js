@@ -1,1 +1,1 @@
-module.exports = require('./lib/html-require-postloader');
+module.exports = require('./lib/extract-require-loader');
