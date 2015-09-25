@@ -25,4 +25,23 @@ describe('html-require-postloader', function () {
 
         expect(result).to.contain('require("icon/icon/source/requiredValue.svg")');
     });
+
+    it('should support html markup', function () {
+        var query = {
+            requireTemplate: 'require("some/#value#.svg");',
+            markers:[
+                {
+                    attribute: 'react-static="Icon"',
+                    valueRegExp: 'glyph=..([a-z-]*)',
+                    stopWord: '>'
+                }
+            ]
+        };
+        var query = '?' + JSON.stringify(query);
+        var source = 'module.exports = "<span foo react-static="Icon" foo glyph="\'some-glyph-name\'" bar="test"></span>"';
+
+        var result = loader.call({query: query}, source);
+
+        expect(result).to.contain('require("some/some-glyph-name.svg")');
+    });
 });
