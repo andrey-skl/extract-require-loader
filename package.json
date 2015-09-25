@@ -1,6 +1,6 @@
 {
   "name": "extract-require-loader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Webpack loader. Parses source and replaces content with required value.",
   "main": "index.js",
   "scripts": {
