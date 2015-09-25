@@ -20,10 +20,11 @@
     "url": "https://github.com/huston007/extract-require-loader/issues"
   },
   "homepage": "https://github.com/huston007/extract-require-loader",
-  "dependencies": {},
+  "dependencies": {
+    "loader-utils": "0.2.11"
+  },
   "devDependencies": {
     "chai": "3.3.0",
-    "loader-utils": "0.2.11",
     "mocha": "2.3.3"
   }
 }
