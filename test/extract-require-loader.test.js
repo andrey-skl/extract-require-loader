@@ -31,14 +31,14 @@ describe('html-require-postloader', function () {
             requireTemplate: 'require("some/#value#.svg");',
             markers:[
                 {
-                    attribute: 'react-static="Icon"',
-                    valueRegExp: 'glyph=..([a-z-]*)',
+                    attribute: 'react-static=\\"Icon\\"',
+                    valueRegExp: 'react-glyph=."\'([a-z-]*)',
                     stopWord: '>'
                 }
             ]
         };
         var query = '?' + JSON.stringify(query);
-        var source = 'module.exports = "<span foo react-static="Icon" foo glyph="\'some-glyph-name\'" bar="test"></span>"';
+        var source = "module.exports = \"<span foo react-static=\\\"Icon\\\" foo react-glyph=\\\"'some-glyph-name'\\\" bar='test'></span>\"";
 
         var result = loader.call({query: query}, source);
 
